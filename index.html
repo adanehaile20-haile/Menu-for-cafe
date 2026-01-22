@@ -365,6 +365,32 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 </script>
+    <!-- Feedback Button -->
+<div class="feedback-btn" onclick="openFeedback()">
+    💬 <span>Feedback</span>
+</div>
+
+<!-- Feedback Popup -->
+<div class="feedback-popup" id="feedbackPopup">
+    <h3>Send Feedback</h3>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea placeholder="Write your feedback..."></textarea>
+    <div class="feedback-actions">
+        <button onclick="closeFeedback()">Cancel</button>
+        <button class="send-btn">Send</button>
+    </div>
+</div>
+<script>
+function openFeedback() {
+    document.getElementById("feedbackPopup").style.display = "block";
+}
+
+function closeFeedback() {
+    document.getElementById("feedbackPopup").style.display = "none";
+}
+</script>
+
 
 </div>
 <div class="footer-section">
@@ -400,3 +426,4 @@ document.addEventListener("DOMContentLoaded", function () {
 </html>
 </body>
 </html>
+
