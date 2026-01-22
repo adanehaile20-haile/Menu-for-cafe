@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,9 +10,15 @@
 
  <div class="Main">
     <h1 class="header" >
-   🎂KONDITOREI CAFE AND CAKE PLC 🎂
+   <header class="site-header">
+    <h1 class="logo">🎂KONDITOREI CAFE AND CAKE PLC🎂</h1>
+</header>
 </h1>  
 <!-- CAKE MENU -->
+ <div class="header-search">
+        <input type="text" placeholder="Search cakes, drinks...">
+        <button>🔍</button>
+    </div>
 <div class="category">CAKE MENU 🍰</div>
 <div class="menu-container">
     <div class="menu-card">
@@ -342,10 +349,46 @@
             <p class="price">40.00 birr</p>
         </div>
     </div>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.querySelector(".header-search input");
+    const items = document.querySelectorAll(".menu-card");
+
+    searchInput.addEventListener("keyup", function () {
+        let value = this.value.toLowerCase();
+
+        items.forEach(item => {
+            let text = item.textContent.toLowerCase();
+            item.style.display = text.includes(value) ? "" : "none";
+        });
+    });
+});
+</script>
+
 </div>
-<div class="wave-text-container">
-  <span class="wave-text">KONDITOREI</span>
+<div class="footer-section">
+    <h2>Contact Info</h2>
+
+    <div class="contact-row">
+        <div class="contact-label">📞 Call us: +251 912 131 415</div>
+    </div>
+
+    <div class="contact-row">
+        <div class="contact-label">✉️ Write: konditorei@gmail.com</div>
+    </div>
+
+    <div class="contact-row">
+        <div class="contact-label">📍 Find us: Denbel Merkeb Plaza, Mekanisa & CMC</div>
+    </div>
+
+    <div class="follow-us">
+        Follow us: Facebook • Instagram • TikTok
+    </div>
 </div>
+
+
+        <br>
     <div class="note">
         <strong>Dear Customer:</strong> This is inform you all price are including vat 15% Donot Pay Without Reciept.
     </div>
