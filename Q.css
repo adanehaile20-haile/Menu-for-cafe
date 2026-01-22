@@ -244,7 +244,6 @@ margin:0;
     -o-transform: translateY(-30%);
 }
 
-
 .header-search input {
     flex: 1;
     padding: 8px 12px;
@@ -285,61 +284,8 @@ margin:0;
         width: 100%;
         margin: auto;
     }
-
 }
-.feedback-btn {
-    position: fixed;
-    right: 20px;
-    bottom: 30px;
-    background: linear-gradient(135deg, #6b5a2e, #8a6d3b);
-    color: #fff;
-    padding: 12px 22px;
-    border-radius: 30px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-    z-index: 1000;
-    transition: transform 0.2s ease;
-}
-
-.feedback-btn:hover {
-    transform: scale(1.05);
-}
-
-/* Popup Box */
-.feedback-popup {
-    position: fixed;
-    right: 20px;
-    bottom: 90px;
-    width: 300px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-    display: none;
-    z-index: 1001;
-}
-
-.feedback-popup h3 {
-    margin-top: 0;
-    color: #3e2723;
-}
-
-/* Form fields */
-.feedback-popup input,
-.feedback-popup textarea {
-    width: 100%;
-    padding: 8px 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 14px;
-}
-
+/* Floating Feedback Button */
 .feedback-btn {
     position: fixed;
     right: 20px;
@@ -420,5 +366,3 @@ margin:0;
 .feedback-actions button:first-child {
     background: #ccc;
 }
-
-
